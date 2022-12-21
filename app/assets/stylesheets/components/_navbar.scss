@@ -1,12 +1,24 @@
-.navbar-lewagon {
+.navbar{
+  display: flex;
   justify-content: space-between;
-  background: white;
-}
+  background-color: $card-grey;
+  padding: 1rem;
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+  ul{
+    list-style: none;
+    font-size: 2rem;
+    li{
+      display: inline;
+    }
+    a{
+    color: $light-gray;
+    text-decoration: none;
+    }
+  }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+
+  #details{
+    display: flex;
+    word-spacing: 1rem;
+  }
 }
