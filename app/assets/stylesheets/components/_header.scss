@@ -1,0 +1,50 @@
+.header{
+  height: 100vh;
+  margin-top: 1.5rem;
+}
+.cards{
+  height: 100vh;
+}
+
+.card-1, .card-2{
+  width: 100%;
+  background-color: $card-grey;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05) ;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.3);
+}
+
+.card-1{
+  height: 50vh;
+    h2{
+    font-size: 3rem;
+    }
+    span{
+    color: $yellow;
+    }
+}
+
+.card-2{
+  height:35vh;
+  margin-top: 5vh;
+    .button{
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+
+img{
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05) ;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.3);
+}
