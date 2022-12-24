@@ -2,13 +2,24 @@
   <div class="title">Resume</div>
 
   <div class="tab_box">
-    <a href="#" class="tab_button">About Me</a>
-    <a href="#"  class="tab_button">Experiance</a>
-    <a href="#"  class="tab_button">Skilss</a>
-    <a href="#"  class="tab_button">Tools</a>
+    <a href="#about-section" class="tab_button">About Me</a>
+    <a href="#experiance-section"  class="tab_button">Experiance</a>
+    <a href="#skills-section"  class="tab_button">Skilss</a>
+    <a href="#tools-section"  class="tab_button">Tools</a>
   </div>
 
   <div class="content-box">
-
+    <section id="about-section">
+      <%= render 'shared/about-me' %>
+    </section>
+    <section id="experiance-section">
+      <%= render 'shared/experiance' %>
+    </section>
+    <section id="skills-section">
+      <%= render 'shared/skills' %>
+    </section>
+    <section id="tools-section">
+      <%= render 'shared/tools' %>
+    </section>
   </div>
 </div>

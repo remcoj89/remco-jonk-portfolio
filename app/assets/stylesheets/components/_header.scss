@@ -8,7 +8,6 @@
 }
 
 .card-1, .card-2{
-  width: 100%;
   background-color: $card-grey;
   border-radius: 5px;
   padding: 2rem;
@@ -34,6 +33,7 @@
   height:35vh;
   margin-top: 5vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   .button{

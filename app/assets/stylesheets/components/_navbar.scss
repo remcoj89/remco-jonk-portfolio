@@ -1,12 +1,13 @@
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: $card-grey;
-  padding: 0.5;
+  padding: 0.5rem;
 
   ul{
     list-style: none;
     font-size: 2rem;
+    padding-left: 0;
     li{
       display: inline;
     }

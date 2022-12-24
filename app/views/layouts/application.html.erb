@@ -13,17 +13,19 @@
   </head>
 
   <body>
-  <%= render 'shared/navbar' %>
-  <%= render 'shared/header' %>
-    <%= yield %>
-    <%= render 'shared/resume' %>
-    <%= render 'shared/contact' %>
-    <div class="container">
-    <br>
-      <% flash.each do |key, message| %>
-        <p class="alert alert-<%= key %>"><%= message %></p>
-      <% end %>
-    </div>
+    <section id="home-section">
+      <%= render 'shared/navbar' %>
+      <%= render 'shared/header' %>
+    </section>
+    <section id="portfolio-section">
+      <%= yield %>
+    </section>
+    <section id="resume-section">
+      <%= render 'shared/resume' %>
+    </section>
+    <section id="contact-section">
+      <%= render 'shared/contact' %>
+    </section>
     <%= render 'shared/footer' %>
   </body>
 </html>

@@ -2,15 +2,23 @@
   <div class="container">
     <div id="home">
       <ul>
-        <li><a href="#home">Home</a></li>
+      <%= link_to "#home-section" do %>
+        <li>Home</li>
+      <% end %>
       </ul>
     </div>
 
     <div id="details">
       <ul>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <%= link_to "#resume-section" do %>
+          <li>Resume</li>
+        <% end %>
+        <%= link_to "#portfolio-section" do %>
+          <li>Portfolio</li>
+        <% end %>
+        <%= link_to "#contact-section" do %>
+          <li>Contact</li>
+        <% end %>
       </ul>
     </div>
   </div>
