@@ -2,7 +2,7 @@
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 85vh;
   margin-bottom: 1rem;
 }
 
@@ -29,5 +29,18 @@
     width: 80%;
     margin: 0 auto;
     text-align: left;
+  }
+
+  .socials{
+    display: flex;
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
+
+}
+.form{
+  margin: 2rem;
+  .button{
+    color:white;
   }
 }

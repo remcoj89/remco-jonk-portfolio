@@ -10,12 +10,25 @@
         <br>
         <p>Phone: +31 6 23927717</p>
         <p>Email: remcojonk@hotmail.com</p>
-        <p>Or find me on</p>
-
+        <p>Or find me on:</p>
+        <div class="socials">
+          <a href="https://github.com/remcoj89"> <i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/remcojonk/"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
     <div class="card-right">
 
+      <%= simple_form_for new_contact_path do |f| %>
+        <div class="form">
+          <h1 class="text-4xl text-center">Contact Me</h1>
+          <p>I'd love to hear from you. Send me a message below.</p>
+            <%= f.input :name %>
+            <%= f.input :email %>
+            <%= f.input :message %>
+            <%= f.submit "Send", class: "tab_button", style:  "color: white;" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
