@@ -30,6 +30,9 @@ gem "jbuilder"
 # Cloudinary gem
 gem "cloudinary"
 
+# Mailform gem
+gem 'mail_form', '~> 1.9'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
