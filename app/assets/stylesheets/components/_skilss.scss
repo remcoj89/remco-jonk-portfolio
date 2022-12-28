@@ -1,0 +1,203 @@
+progress {
+  opacity: 0;
+}
+
+.progress-element {
+  width: 80%;
+  margin: 0 0 10px;
+}
+
+.progress-container {
+  position: relative;
+  background: #eee;
+  height: 0.75rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+.progress-element--html .progress-container::before {
+  animation: progress-html 1s ease-in forwards;
+}
+
+.progress-element--css .progress-container::before {
+  animation: progress-css 1s ease-in forwards;
+}
+
+.progress-element--bootstrap .progress-container::before {
+  animation: progress-css 1s ease-in forwards;
+}
+
+.progress-element--javascript .progress-container::before {
+  animation: progress-javascript 1s ease-in forwards;
+}
+
+.progress-element--ruby .progress-container::before {
+  animation: progress-ruby 1s ease-in forwards;
+}
+
+.progress-element--sql .progress-container::before {
+  animation: progress-sql 1s ease-in forwards;
+}
+
+.progress-element--postgressql .progress-container::before {
+  animation: progress-postgressql 1s ease-in forwards;
+}
+
+.progress-element--json .progress-container::before {
+  animation: progress-json 1s ease-in forwards;
+}
+
+
+.progress-label {
+  position: relative;
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+
+
+.progress-label::after {
+  counter-reset: num var(--num);
+  content: counter(num) "%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.progress-element--html .progress-label::after {
+  animation: progress-text-html 1s ease-in forwards;
+}
+
+.progress-element--css .progress-label::after {
+  animation: progress-text-css 1s ease-in forwards;
+}
+
+.progress-element--bootstrap .progress-label::after {
+  animation: progress-text-css 1s ease-in forwards;
+}
+
+.progress-element--javascript .progress-label::after {
+  animation: progress-text-javascript 1s ease-in forwards;
+}
+
+.progress-element--ruby .progress-label::after {
+  animation: progress-text-ruby 1s ease-in forwards;
+}
+
+.progress-element--sql .progress-label::after {
+  animation: progress-text-sql 1s ease-in forwards;
+}
+
+.progress-element--postgressql .progress-label::after {
+  animation: progress-text-postgressql 1s ease-in forwards;
+}
+
+.progress-element--json .progress-label::after {
+  animation: progress-text-json 1s ease-in forwards;
+}
+
+@keyframes progress-html {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes progress-css {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes progress-bootstrap {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes progress-javascript {
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes progress-ruby {
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes progress-sql {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes progress-postgressql {
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes progress-json {
+  to {
+    width: 15%;
+  }
+}
+
+
+
+@keyframes progress-text-html {
+  to {
+    --num: 60;
+  }
+}
+
+@keyframes progress-text-css {
+  to {
+    --num: 60;
+  }
+}
+
+@keyframes progress-text-javascript {
+  to {
+    --num: 25;
+  }
+}
+
+@keyframes progress-text-ruby {
+  to {
+    --num: 40;
+  }
+}
+
+@keyframes progress-text-sql {
+  to {
+    --num: 20;
+  }
+}
+
+@keyframes progress-text-postgressql {
+  to {
+    --num: 20;
+  }
+}
+
+@keyframes progress-text-json {
+  to {
+    --num: 15;
+  }
+}
