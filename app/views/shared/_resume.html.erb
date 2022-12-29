@@ -1,17 +1,17 @@
-<div class="container" >
+<div class="container" data-controller="tabs" data-tabs-default-tab-value="about">
   <div class="title">Resume</div>
 
-  <div class="tab_box" data-controller="tabs" data-tabs-default-tab-value="about" >
-    <a href="#about-section" class="tab_button" id="about" data-tabs-target="btn" data-action="click->tabs#select">About Me</a>
-    <a href="#experiance-section" class="tab_button" id="experiance" data-tabs-target="btn" data-action="click->tabs#select">Experiance</a>
-    <a href="#skills-section" class="tab_button" id="skilss" data-tabs-target="btn" data-action="click->tabs#select">Skilss</a>
-    <a href="#tools-section" class="tab_button" id="tools" data-tabs-target="btn" data-action="click->tabs#select">Tools</a>
+  <div class="d-flex tab_box" >
+    <p class="tab_button" id="about" data-tabs-target="btn" data-action="click->tabs#select">About Me</p>
+    <p class="tab_button" id="experiance" data-tabs-target="btn" data-action="click->tabs#select">Experiance</p>
+    <p class="tab_button" id="skilss" data-tabs-target="btn" data-action="click->tabs#select">Skilss</p>
+    <p class="tab_button" id="tools" data-tabs-target="btn" data-action="click->tabs#select">Tools</p>
+  </div>
 
-    <div class="content-box">
-        <%= render 'shared/about-me' %>
-        <%= render 'shared/experiance' %>
-        <%= render 'shared/skills'  %>
-        <%= render 'shared/tools' %>
-    </div>
+  <div class="content-box">
+    <%= render 'shared/about-me' %>
+    <%= render 'shared/experiance' %>
+    <%= render 'shared/skills'  %>
+    <%= render 'shared/tools' %>
   </div>
 </div>
