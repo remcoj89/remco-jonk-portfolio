@@ -1,25 +1,17 @@
-<div class="container">
+<div class="container" data-controller="tabs" data-tabs-default-tab-value="about">
   <div class="title">Resume</div>
 
-
-  <div class="tab_box">
-    <a href="#about-section" class="tab_button">About Me</a>
-    <a href="#experiance-section"  class="tab_button">Experiance</a>
-    <a href="#skills-section"  class="tab_button">Skilss</a>
-    <a href="#tools-section"  class="tab_button">Tools</a>
+  <div class="tab_box" >
+    <a href="#about-section" class="tab_button" id="about" data-tabs-target="btn" data-action="click->tabs#select">About Me</a>
+    <a href="#experiance-section" class="tab_button" id="experiance" data-tabs-target="btn" data-action="click->tabs#select">Experiance</a>
+    <a href="#skills-section" class="tab_button" id="skilss" data-tabs-target="btn" data-action="click->tabs#select">Skilss</a>
+    <a href="#tools-section" class="tab_button" id="tools" data-tabs-target="btn" data-action="click->tabs#select">Tools</a>
   </div>
+
   <div class="content-box">
-    <section id="about-section">
       <%= render 'shared/about-me' %>
-    </section>
-    <section id="experiance-section">
       <%= render 'shared/experiance' %>
-    </section>
-    <section id="skills-section">
-      <%= render 'shared/skills' %>
-    </section>
-    <section id="tools-section">
+      <%= render 'shared/skills'  %>
       <%= render 'shared/tools' %>
-    </section>
   </div>
 </div>

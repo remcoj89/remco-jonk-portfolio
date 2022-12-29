@@ -16,5 +16,6 @@
   padding: 5rem;
   overflow: auto;
   background-color: $card-grey;
+  box-sizing: border-box;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.05), -6px -6px 19px rgba(255, 255, 255, 0.05);
 }
