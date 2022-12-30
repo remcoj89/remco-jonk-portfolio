@@ -1,9 +1,21 @@
+.skills{
+  display:flex;
+  gap: 3rem;
+}
+
+.skills-card-1, .skills-card-2{
+  background-color: $card-grey;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3rem;
+}
+
 progress {
   opacity: 0;
 }
 
 .progress-element {
-  width: 80%;
+  width: 100%;
   margin: 0 0 10px;
 }
 
@@ -22,7 +34,7 @@ progress {
   left: 0;
   height: 100%;
   width: 0;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-image: linear-gradient(to right, rgb(239, 41, 127), rgb(201, 26, 5));
 }
 
 .progress-element--html .progress-container::before {
