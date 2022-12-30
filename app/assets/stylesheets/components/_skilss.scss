@@ -5,6 +5,7 @@
 
 .skills-card-1, .skills-card-2{
   background-color: $card-grey;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), 4px 4px 4px rgba(0, 0, 0, 0.05), -2px -2px 2px rgba(255, 255, 255, 0.2), -6px -6px 8px rgba(255, 255, 255, 0.3);
   width: 100%;
   border-radius: 5px;
   padding: 3rem;

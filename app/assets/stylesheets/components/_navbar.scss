@@ -3,6 +3,10 @@
   justify-content: space-around;
   background-color: $card-grey;
   padding: 0.5rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   ul{
     list-style: none;
