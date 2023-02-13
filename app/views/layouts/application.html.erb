@@ -11,22 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Montserrat&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <%= render 'shared/navbar' %>
-    <section id="home-section">
-      <%= render 'shared/header' %>
-    </section>
-    <section id="portfolio-section">
-      <%= yield %>
-    </section>
-    <section id="resume-section">
-      <%= render 'shared/resume' %>
-    </section>
-    <section id="contact-section">
-      <%= render 'shared/contact' %>
-    </section>
-    <%= render 'shared/footer' %>
+
+      <%= render 'shared/navbar' %>
+      <section id="home-section">
+        <%= render 'shared/header' %>
+      </section>
+      <section id="portfolio-section">
+        <%= yield %>
+      </section>
+      <section id="resume-section">
+        <%= render 'shared/resume' %>
+      </section>
+      <section id="contact-section">
+        <%= render 'shared/contact' %>
+      </section>
+      <%= render 'shared/footer' %>
+
   </body>
   <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </html>

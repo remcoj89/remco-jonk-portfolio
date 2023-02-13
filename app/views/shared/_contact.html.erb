@@ -1,16 +1,15 @@
 <div class="container">
   <div class="title">Contact</div>
-
   <div class="contact-cards">
     <div class="card-left">
-        <img id="contact" src="https://res.cloudinary.com/dipnvqfev/image/upload/v1671811527/Portfolio%20Remco/michal-biernat-h0xEUQXzU38-unsplash_qd1axz.jpg" alt="Contact">
+      <img id="contact" src="https://res.cloudinary.com/dipnvqfev/image/upload/v1671811527/Portfolio%20Remco/michal-biernat-h0xEUQXzU38-unsplash_qd1axz.jpg" alt="Contact">
       <div class="contact-info">
         <h3>Let's get connected</h3>
         <p>I am availible for front-end or full-stack job offers and or freelance projects.</p>
         <br>
-        <p>Phone: +31 6 23927717</p>
-        <p>Email: remcojonk@hotmail.com</p>
-        <p>Or find me on:</p>
+        <p><strong>Phone:</strong> +31 6 23927717</p>
+        <p><strong>Email:</strong> remcojonk@hotmail.com</p>
+        <p><u>Or find me on:</u></p>
         <div class="socials">
           <a href="https://github.com/remcoj89"> <i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/remcojonk/"> <i class="fa-brands fa-linkedin"></i></a>
@@ -18,17 +17,18 @@
       </div>
     </div>
     <div class="card-right">
-
-      <%= simple_form_for new_contact_path do |f| %>
-        <div class="form">
-          <h1 class="text-4xl text-center">Contact Me</h1>
-          <p>I'd love to hear from you. Send me a message below.</p>
-            <%= f.input :name %>
-            <%= f.input :email %>
-            <%= f.input :message %>
-            <%= f.submit "Send", class: "button-primary", style:  "color: white;" %>
-        </div>
-      <% end %>
+      <div class="card-message">
+        <h1 >Contact Me</h1>
+        <p>I'd love to hear from you. Send me a message below.</p>
+      </div>
+      <div class="contact-form">
+        <%= simple_form_for new_contact_path do |f| %>
+          <%= f.input :name %>
+          <%= f.input :email %>
+          <%= f.input :message %>
+          <%= f.submit "Send", class: "contact-button button-primary", style:  "color: white;" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

@@ -10,7 +10,7 @@
   height: 100%;
 }
 
-.card-1, .card-2{
+.card-1, .card-download{
   background-color: $card-grey;
   border-radius: 5px;
   padding: 2rem;
@@ -36,17 +36,18 @@
     }
 }
 
-.card-2{
+.card-download{
   height:35%;
-  margin-top: 5vh;
+  margin-top: 3rem;
   display: flex;
-  flex-wrap: wrap;
+  text-align: center;
   flex-direction: column;
   justify-content: space-between;
   .button{
-    border-bottom: 5vh;
+    // border-bottom: 5vh;
     display: flex;
     justify-content: space-between;
+    margin-top: 1.5rem;
   }
   a{
     text-decoration: none;
