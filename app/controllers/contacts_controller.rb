@@ -4,14 +4,13 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(params[:contact])
-    @contact.request = request
-    if @contact.deliver
-      redirect_to action: :sent
-    else
-      flash.now[:error] = 'Could not send message'
-      render :new, status: :unprocessable_entity
-    end
+    @name = params[:contacts][:name]
+    @last_name = params[:contacts][:last_name]
+    @email = params[:contacts][:email]
+    @message = params[:contacts][:message]
+    # # Perform any necessary actions with the form data
+    # flash[:success] = "Your message has been sent successfully."
+    # redirect_to :root
   end
 
   def sent

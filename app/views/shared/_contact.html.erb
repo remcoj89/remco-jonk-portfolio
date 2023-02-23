@@ -1,6 +1,7 @@
 <div class="container">
   <div class="title">Contact</div>
   <div class="contact-cards">
+
     <div class="card-left">
       <img id="contact" src="https://res.cloudinary.com/dipnvqfev/image/upload/v1671811527/Portfolio%20Remco/michal-biernat-h0xEUQXzU38-unsplash_qd1axz.jpg" alt="Contact">
       <div class="contact-info">
@@ -14,7 +15,7 @@
           <a href="https://github.com/remcoj89"> <i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/remcojonk/"> <i class="fa-brands fa-linkedin"></i></a>
         </div>
-      </div>
+      </div>ra
     </div>
     <div class="card-right">
       <div class="card-message">
@@ -22,11 +23,24 @@
         <p>I'd love to hear from you. Send me a message below.</p>
       </div>
       <div class="contact-form">
-        <%= simple_form_for new_contact_path do |f| %>
-          <%= f.input :name %>
-          <%= f.input :email %>
-          <%= f.input :message %>
-          <%= f.submit "Send", class: "contact-button button-primary", style:  "color: white;" %>
+        <%= form_with scope: :contacts, url: contacts_path, method: :post, local: true do |form| %>
+          <div class="form-group">
+            <%= form.label :name %>
+            <%= form.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= form.label :last_name %>
+            <%= form.text_field :last_name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= form.label :email %>
+            <%= form.email_field :email, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= form.label :message %>
+            <%= form.text_area :message, class: "form-control" %>
+          </div>
+          <%= form.submit "Submit", class: "btn btn-primary" %>
         <% end %>
       </div>
     </div>
