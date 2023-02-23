@@ -33,6 +33,9 @@ gem "cloudinary"
 # Mailform gem
 gem 'mail_form', '~> 1.9'
 
+# Mailtrap gem
+gem 'mailtrap'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

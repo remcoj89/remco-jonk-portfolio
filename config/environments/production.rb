@@ -81,6 +81,11 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  config.action_mailer.delivery_method = :mailtrap
+config.action_mailer.mailtrap_settings = {
+  api_key: ENV.fetch('MAILTRAP_API_KEY')
+}
+
   # Use a different logger for distributed setups.
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
