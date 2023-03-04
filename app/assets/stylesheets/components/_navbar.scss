@@ -3,27 +3,13 @@
   justify-content: space-around;
   background-color: $dark-bg;
   padding: 0.5rem;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-
-  ul{
-    list-style: none;
-    font-size: 2rem;
-    padding-left: 0;
-    li{
-      display: inline;
-    }
-    a{
-    color: $light-gray;
-    text-decoration: none;
-    }
-  }
-
-
+  font-size: 2.5rem;
   #details{
     display: flex;
     word-spacing: 1rem;
+    gap: 1.5rem;
   }
 }

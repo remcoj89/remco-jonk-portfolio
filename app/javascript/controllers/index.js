@@ -15,8 +15,27 @@ application.register("alerts", AlertsController)
 
 // Selecting elements
 const allSections = document.querySelectorAll('section');
-console.log(allSections);
 const allButtons = document.getElementsByTagName('button');
-console.log(allButtons);
 
 
+// Smoot scroling
+
+const btnScrollTo = document.querySelector('.btn--scrole-to');
+const homeSection = document.querySelector('.header');
+const portfolioSection = document.querySelector('#portfolio-section')
+
+btnScrollTo.addEventListener('click', function (e) {
+
+  const s1coords = homeSection.getBoundingClientRect();
+
+  // Old way
+    window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageXOffset,
+    behavior: 'smooth',
+  });
+
+  // // new way
+  // btn = portfolioSection.scrollIntoView({ beavior: 'smooth' });
+  // console.log("hello from portfolio button");
+})
