@@ -9,3 +9,14 @@ application.register("hello", HelloController)
 
 import TabsController from "./tabs_controller"
 application.register("tabs", TabsController)
+
+import AlertsController from "./alerts_controller"
+application.register("alerts", AlertsController)
+
+// Selecting elements
+const allSections = document.querySelectorAll('section');
+console.log(allSections);
+const allButtons = document.getElementsByTagName('button');
+console.log(allButtons);
+
+
